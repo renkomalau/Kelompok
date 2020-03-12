@@ -26,12 +26,12 @@
 
 
   
-    <ion-item button (click)="testClick()" *ngFor="let page of pages">
+    <ion-item button (click)="testClick()" *ngFor="let page of doctor">
       <ion-thumbnail slot="start">
-        <img src="{{page.thumb}}">
+        <img src="{{page.name}}">
       </ion-thumbnail>
       <ion-label>
-        <h3>{{page.title}}</h3>
+        <h3>{{page.description}}</h3>
         <p>Icon on right</p>
       </ion-label>
     </ion-item>
