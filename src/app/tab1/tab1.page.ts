@@ -23,13 +23,13 @@ export class Tab1Page {
         link: "/contact"
       },
       {
-        title: 'Juni',
+        title: 'Anemia',
         thumb: './assets/images/c.jpeg',
         description: 'Third party resources used by this app',
         link: "/technology"
       },
       {
-        title: 'Tweets',
+        title: 'Depresi',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
