@@ -35,8 +35,8 @@ export class Tab1Page {
         link: "TweetsPage"
       },
       {
-        title: 'Tweets',
-        thumb: 'assets/images/d.jpeg',
+        title: 'Tuberkulosis',
+        thumb: 'assets/images/e.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
