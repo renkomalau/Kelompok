@@ -11,13 +11,13 @@ export class Tab1Page {
   constructor() {
     this.pages = [
       {
-        title: 'About',
+        title: 'Diabetes',
         thumb: './assets/images/a.jpeg',
         description: 'Who we are. What we do. Why we’re here',
         link: "/about"
       },
       {
-        title: 'Contact',
+        title: 'Corona',
         thumb: './assets/images/b.jpeg',
         description: 'Drop us a line and get in touch we’d love to hear from you!',
         link: "/contact"
