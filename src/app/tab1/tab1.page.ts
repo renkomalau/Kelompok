@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
   public pages: Array<{ title: string, thumb: string, description: string, link: any  }>;
+  public doctor: Array<{ id:string , name: string, description: string, link: any  }>;
+
 
   constructor() {
     this.pages = [
@@ -36,34 +38,92 @@ export class Tab1Page {
       },
       {
         title: 'Tuberkulosis',
-        thumb: 'assets/images/e.jpeg',
-        description: 'The latest news updates from our Twitter account',
-        link: "TweetsPage"
-      },
-      {
-        title: 'Tweets',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
-        title: 'Tweets',
+        title: 'HIV/AIDS',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
-        title: 'Tweets',
+        title: 'Chikungunya',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
-        title: 'Tweets',
+        title: 'Rubella',
+        thumb: 'assets/images/d.jpeg',
+        description: 'The latest news updates from our Twitter account',
+        link: "TweetsPage"
+      },
+      {
+        title: 'DBD',
+        thumb: 'assets/images/d.jpeg',
+        description: 'The latest news updates from our Twitter account',
+        link: "TweetsPage"
+      },
+      {
+        title: 'Rabies',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       }
+
+    ];
+
+    this.doctor = [
+      {
+        id : '1',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '2',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '3',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '4',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '5',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '6',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '6',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '1',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
     ];
     
   }
