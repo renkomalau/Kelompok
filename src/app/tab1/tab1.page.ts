@@ -79,49 +79,57 @@ export class Tab1Page {
         id : '1',
         name : 'Dr.Ade Senorita, Sp.PD',
         description : 'Dokter Spesialis Penyakit Dalam',
-        link: "bnbcnas"
+        link: "bnbcnas",
+        image: 'assets/images/doctor/1.jpeg'
       },
       {
         id : '2',
         name : 'Dr.April Hidayat, Sp.B,FINACS, FICS',
         description : 'Dokter Spesialis Bedah',
-        link: "bnbcnas"
+        link: "bnbcnas",
+        image: 'assets/images/doctor/2.jpg'
       },
       {
         id : '3',
         name : 'Dr.Lindayanti,Sp.PK',
         description : 'Dokter Spesialis Kesehatan Jiwa',
-        link: "bnbcnas"
+        link: "bnbcnas",
+        image: 'assets/images/doctor/3.jpg'
       },
       {
         id : '4',
         name : 'Dr.Zalmah',
         description : 'Dokter Umum',
-        link: "bnbcnas"
+        link: "bnbcnas",
+        image: 'assets/images/doctor/4.jpg'
       },
       {
         id : '5',
         name : 'Dr.Jamar Hasan, Sp.A',
         description : 'Dokter Spesialis Anak',
-        link: "bnbcnas"
+        link: "bnbcnas",
+        image: 'assets/images/doctor/5.jpg'
       },
       {
         id : '6',
         name : 'Dr.Antonius Sianturi, Sp.P',
         description : 'Dokter Spesialis Paru',
-        link: "bnbcnas"
+        link: "bnbcnas",
+        image: 'assets/images/doctor/6.jpg'
       },
       {
         id : '7',
         name : 'Dr.Ali Akbar, Sp.P',
         description : 'Dokter Spesialis Mata',
-        link: "bnbcnas"
+        link: "bnbcnas",
+        image: 'assets/images/doctor/7.jpg'
       },
       {
         id : '8',
         name : 'Dr.Muhammad Wijaya, Sp.P',
         description : 'Dokter Spesialis Kulit',
-        link: "bnbcnas"
+        link: "bnbcnas",
+        image: 'assets/images/doctor/8.jpg'
       },
     ];
     
