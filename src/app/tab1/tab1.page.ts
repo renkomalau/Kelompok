@@ -77,50 +77,50 @@ export class Tab1Page {
     this.doctor = [
       {
         id : '1',
-        name : 'Rengko',
-        description : 'blabla',
+        name : 'Dr.Ade Senorita, Sp.PD',
+        description : 'Dokter Spesialis Penyakit Dalam',
         link: "bnbcnas"
       },
       {
         id : '2',
-        name : 'Rengko',
-        description : 'blabla',
+        name : 'Dr.April Hidayat, Sp.B,FINACS, FICS',
+        description : 'Dokter Spesialis Bedah',
         link: "bnbcnas"
       },
       {
         id : '3',
-        name : 'Rengko',
-        description : 'blabla',
+        name : 'Dr.Lindayanti,Sp.PK',
+        description : 'Dokter Spesialis Kesehatan Jiwa',
         link: "bnbcnas"
       },
       {
         id : '4',
-        name : 'Rengko',
-        description : 'blabla',
+        name : 'Dr.Zalmah',
+        description : 'Dokter Umum',
         link: "bnbcnas"
       },
       {
         id : '5',
-        name : 'Rengko',
-        description : 'blabla',
+        name : 'Dr.Jamar Hasan, Sp.A',
+        description : 'Dokter Spesialis Anak',
         link: "bnbcnas"
       },
       {
         id : '6',
-        name : 'Rengko',
-        description : 'blabla',
+        name : 'Dr.Antonius Sianturi, Sp.P',
+        description : 'Dokter Spesialis Paru',
         link: "bnbcnas"
       },
       {
-        id : '6',
-        name : 'Rengko',
-        description : 'blabla',
+        id : '7',
+        name : 'Dr.Ali Akbar, Sp.P',
+        description : 'Dokter Spesialis Mata',
         link: "bnbcnas"
       },
       {
-        id : '1',
-        name : 'Rengko',
-        description : 'blabla',
+        id : '8',
+        name : 'Dr.Muhammad Wijaya, Sp.P',
+        description : 'Dokter Spesialis Kulit',
         link: "bnbcnas"
       },
     ];
