@@ -11,59 +11,72 @@ export class Tab1Page {
   constructor() {
     this.pages = [
       {
-        title: 'About',
+        title: 'Diabetes',
         thumb: './assets/images/a.jpeg',
         description: 'Who we are. What we do. Why we’re here',
         link: "/about"
       },
       {
-        title: 'Contact',
+        title: 'Corona',
         thumb: './assets/images/b.jpeg',
         description: 'Drop us a line and get in touch we’d love to hear from you!',
         link: "/contact"
       },
       {
-        title: 'Juni',
+        title: 'Anemia',
         thumb: './assets/images/c.jpeg',
         description: 'Third party resources used by this app',
         link: "/technology"
       },
       {
-        title: 'Tweets',
+        title: 'Depresi',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
-        title: 'Tweets',
+        title: 'Diare',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
-        title: 'Tweets',
+        title: 'Tuberkulosis',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
-        title: 'Tweets',
+        title: 'HIV/AIDS',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
-        title: 'Tweets',
+        title: 'Chikungunya',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
-        title: 'Tweets',
+        title: 'Rubella',
+        thumb: 'assets/images/d.jpeg',
+        description: 'The latest news updates from our Twitter account',
+        link: "TweetsPage"
+      },
+      {
+        title: 'DBD',
+        thumb: 'assets/images/d.jpeg',
+        description: 'The latest news updates from our Twitter account',
+        link: "TweetsPage"
+      },
+      {
+        title: 'Rabies',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       }
+
     ];
     
   }
