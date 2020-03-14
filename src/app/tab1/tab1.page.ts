@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
   public pages: Array<{ title: string, thumb: string, description: string, link: any  }>;
+  public doctor: Array<{ id:string , name: string, description: string, link: any  }>;
+
 
   constructor() {
     this.pages = [
@@ -77,6 +79,57 @@ export class Tab1Page {
         link: "TweetsPage"
       }
 
+    ];
+
+    this.doctor = [
+      {
+        id : '1',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '2',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '3',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '4',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '5',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '6',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '6',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
+      {
+        id : '1',
+        name : 'Rengko',
+        description : 'blabla',
+        link: "bnbcnas"
+      },
     ];
     
   }
