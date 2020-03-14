@@ -37,37 +37,37 @@ export class Tab1Page {
         link: "TweetsPage"
       },
       {
-        title: 'Tweets',
+        title: 'Tuberkulosis',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
-        title: 'Tweets',
+        title: 'HIV/AIDS',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
-        title: 'Tweets',
+        title: 'Chikungunya',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
-        title: 'Tweets',
-        thumb: 'assets/images/d.jpeg',
-        description: 'The latest news updates from our Twitter account',
-        link: "TweetsPage"
-      },
-      {
-        title: 'Tweets',
+        title: 'Rubella',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
         title: 'DBD',
+        thumb: 'assets/images/d.jpeg',
+        description: 'The latest news updates from our Twitter account',
+        link: "TweetsPage"
+      },
+      {
+        title: 'Rabies',
         thumb: 'assets/images/d.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"

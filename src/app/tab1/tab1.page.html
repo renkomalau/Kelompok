@@ -12,13 +12,13 @@
   </ion-item>
   <ion-slides [options]="slidebaru">
     <ion-slide *ngFor="let page of pages">
-      <ion-card style="background-color: transparent;">
+      <ion-card style="background-color: transparent; box-shadow:none;">
         <img
           src="{{page.thumb}}"
-          style="height: 60px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0); "/>
-        <ion-card-subtitle class="title">
-          {{page.title}}
-        </ion-card-subtitle>
+          style="height: 60px; border-radius: 50%;"/>
+          <ion-label style="color: violet; font-size: 60%;">
+            {{page.title}}
+          </ion-label>
       </ion-card>
     </ion-slide>
   </ion-slides>
