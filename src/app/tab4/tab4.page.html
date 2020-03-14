@@ -1,9 +1,40 @@
-<ion-header>
+<ion-header class="header">
   <ion-toolbar>
-    <ion-title>tab4</ion-title>
+    <ion-searchbar></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <!-- ion slides -->
+  <ion-item>
+    <ion-label>Popular Conditions</ion-label>
+    <ion-label slot="end">See all</ion-label>
+  </ion-item>
+  <ion-slides [options]="slidebaru">
+    <ion-slide *ngFor="let page of pages">
+      <ion-card style="background-color: transparent;">
+        <img
+          
+          src="{{page.thumb}}"
+          class="bg"
+          style="height: 60px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0); "/>
+        <ion-card-subtitle class="title">
+          {{page.title}}
+        </ion-card-subtitle>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <!-- end slides -->
 
-</ion-content>
+
+  
+    <ion-item button (click)="testClick()" *ngFor="let page of pages">
+      <ion-thumbnail slot="start">
+        <img src="{{page.thumb}}">
+      </ion-thumbnail>
+      <ion-label>
+        <h3>{{page.title}}</h3>
+        <p>Icon on right</p>
+      </ion-label>
+    </ion-item>
+  </ion-content>
