@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
   public pages: Array<{ title: string, thumb: string, description: string, link: any  }>;
-  public doctor: Array<{ id:string , name: string, description: string, link: any  }>;
+  public doctor: Array<{ id:string , name: string, description: string, link: any, image : string  }>;
 
 
   constructor() {
