@@ -38,37 +38,37 @@ export class Tab1Page {
       },
       {
         title: 'Tuberkulosis',
-        thumb: 'assets/images/d.jpeg',
+        thumb: 'assets/images/e.jpeg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
         title: 'HIV/AIDS',
-        thumb: 'assets/images/d.jpeg',
+        thumb: 'assets/images/f.jpg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
         title: 'Chikungunya',
-        thumb: 'assets/images/d.jpeg',
+        thumb: 'assets/images/g.jpg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
         title: 'Rubella',
-        thumb: 'assets/images/d.jpeg',
+        thumb: 'assets/images/h.jpg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
         title: 'DBD',
-        thumb: 'assets/images/d.jpeg',
+        thumb: 'assets/images/i.png',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
       {
         title: 'Rabies',
-        thumb: 'assets/images/d.jpeg',
+        thumb: 'assets/images/j.jpg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       }
