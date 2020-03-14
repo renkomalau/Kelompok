@@ -28,10 +28,10 @@
   
     <ion-item button (click)="testClick()" *ngFor="let page of doctor">
       <ion-thumbnail slot="start">
-        <img src="{{page.name}}">
+        <img src="{{page.image}}">
       </ion-thumbnail>
       <ion-label>
-        <h3>{{page.description}}</h3>
+        <h3>{{page.name}}</h3>
         <p>Icon on right</p>
       </ion-label>
     </ion-item>
