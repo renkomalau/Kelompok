@@ -43,7 +43,8 @@
   <!-- list dorctor -->
 
   <ion-list *ngFor="let page of doctor">
-    <ion-item lines="none"><ion-note slot="end" style="font-size:10px;">{{date}}</ion-note></ion-item>
+    <ion-item style="margin:0px 0px 0px 0px; height:28px; top:0px;"><ion-note slot="end" style="font-size:10px;">{{date}}</ion-note></ion-item>
+    
     <ion-item>
       
       <ion-thumbnail slot="start">
@@ -51,8 +52,7 @@
       </ion-thumbnail>
       
       <ion-label>
-        <h3><b>{{page.name}}</b></h3>
-        
+        <h4><b>{{page.name}}</b></h4>
         <p>{{page.description}}</p>
       </ion-label>
       
