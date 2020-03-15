@@ -4,22 +4,28 @@
   <!-- header -->
   <ion-header class="header">
     <ion-toolbar>
-      <ion-searchbar></ion-searchbar>
+      <ion-title style="position: relative; top : 100px; color: yellow;" size="large"><b>Sehat Itu Murah,<br> Sakit itu Mahal</b></ion-title>
+      <ion-searchbar animated style="--icon-color:blue; --placeholder-color:blue; --clear-button-color:blue; " event="ionBlur"></ion-searchbar>
     </ion-toolbar>
   </ion-header>
+
+  <!-- kondisi -->
   
+    <ion-item lines="none">
+      <ion-label><b>Popular Condition</b></ion-label>
+      <ion-note slot="end">See all</ion-note>
+    </ion-item>   
+
+    
   <!-- ion slides -->
-  <ion-item>
-    <ion-label>Popular Condition</ion-label>
-    <ion-label slot="end">See All</ion-label>
-  </ion-item>
   <ion-slides [options]="slidebaru">
     <ion-slide *ngFor="let page of pages">
-      <ion-card style="background-color: transparent; box-shadow:none;">
+      <ion-card>
         <img
           src="{{page.thumb}}"
-          style="height: 60px; border-radius: 50%;"/>
-          <ion-label style="color: violet; font-size: 60%;">
+          style="max-width: 100%;
+          height: 70px; background-color: white; font-size: 20px;"/>
+          <ion-label style="color:black; ">
             {{page.title}}
           </ion-label>
       </ion-card>
@@ -27,17 +33,36 @@
   </ion-slides>
   <!-- end slides -->
 
-
+  <!-- top doctor -->
   
-    <ion-item button (click)="testClick()" *ngFor="let page of doctor">
+    <ion-item lines="none">
+      <ion-label><b>Top doctors</b></ion-label>
+    </ion-item>   
+ 
+
+  <!-- list dorctor -->
+
+  <ion-list *ngFor="let page of doctor">
+    <ion-item lines="none"><ion-note slot="end" style="font-size:10px;">{{date}}</ion-note></ion-item>
+    <ion-item>
+      
       <ion-thumbnail slot="start">
-        <img src="{{page.image}}">
+        <img src="{{page.image}}" style="border-radius:15px;">
       </ion-thumbnail>
+      
       <ion-label>
-        <h3>{{page.name}}</h3>
-        <p>Icon on right</p>
+        <h3><b>{{page.name}}</b></h3>
+        
+        <p>{{page.description}}</p>
       </ion-label>
+      
+      
+      <ion-button slot="end" fill="outline" size="small" shape="round" style=" text-transform: none; --color-hover:red; color: danger;">Reservation</ion-button>
     </ion-item>
+  </ion-list>
+
+    <!-- test -->
+
   </ion-content>
   <!-- ion card -->
   <!-- <ion-card>

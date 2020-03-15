@@ -20,17 +20,17 @@ ion-content ion-toolbar {
 
 .header{
 background-image: url(/assets/images/tab1/dokter.jpg);
-background-color: blue;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: cover;
 }
+
 
 ion-searchbar{
-  margin-top: 35%;
+  margin-top:28%;
 }
 
-ion-toolbar{
-  
-  --background: url(/assets/images/tab1/dokter.jpg);
-}
+
 
 
 // ion-toolbar {

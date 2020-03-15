@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-tab1',
@@ -8,9 +9,12 @@ import { Component } from '@angular/core';
 export class Tab1Page {
   public pages: Array<{ title: string, thumb: string, description: string, link: any  }>;
   public doctor: Array<{ id:string , name: string, description: string, link: any, image : string  }>;
+  public date: any;
 
 
   constructor() {
+    this.date = moment().format('LT'); 
+
     this.pages = [
       {
         title: 'Diabetes',
@@ -38,7 +42,7 @@ export class Tab1Page {
       },
       {
         title: 'Tuberkulosis',
-        thumb: 'assets/images/e.jpeg',
+        thumb: 'assets/images/e.jpg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
       },
@@ -49,7 +53,7 @@ export class Tab1Page {
         link: "TweetsPage"
       },
       {
-        title: 'Chikungunya',
+      title: 'Malaria',
         thumb: 'assets/images/g.jpg',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
@@ -135,6 +139,6 @@ export class Tab1Page {
     
   }
   slidebaru = {
-    slidesPerView: 4.3 }
+    slidesPerView: 3.5 }
 
 }
