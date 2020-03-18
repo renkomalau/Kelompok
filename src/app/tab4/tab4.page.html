@@ -1,10 +1,17 @@
 <ion-content [fullscreen]="true">
   <ion-header>
     <ion-toolbar>
-      <ion-title style="position: relative; top : 100px; color: yellow;" size="large"><b>Sehat Itu Murah,<br />
-          Sakit itu Mahal</b></ion-title>
-      <ion-searchbar animated style="--icon-color:blue; --placeholder-color:blue; --clear-button-color:blue; "
-        event="ionBlur"></ion-searchbar>
+      <ion-title>
+        <!-- <p style="color: wheat; font-size: 15px;  margin-top: 30px;"> -->
+          <!-- <ion-icon name="location-outline"></ion-icon>
+          <ion-label>Batam</ion-label></p> -->
+        <h2 class="text-height" style="color:white;margin-top:65px;">
+          <strong><span style="color: red;">C</span>hats</strong>
+          <p style="font-size:18px; margin: 2px;" class="ion-float-end">
+          <ion-icon name="calendar" style="margin-right:5px;"> </ion-icon>{{date}}</p>
+        </h2>
+      </ion-title>
+      <ion-searchbar animated style="--icon-color:blue; --placeholder-color:blue; --clear-button-color:blue; " placeholder="Search for message"></ion-searchbar>
     </ion-toolbar>
   </ion-header>
 
@@ -13,10 +20,11 @@
 
   <ion-list class="margin-bottom ion-no-padding">
     <ion-card *ngFor="let contact of contacts" style="border-radius: 0px 20px 20px 20px; ">
-    <ion-item class="ion-activatable" color="light">
-      <ion-thumbnail slot="start">
-        <img [src]="contact.contactAvatar" />
+    <ion-item class="ion-activatable" color="light" lines="none">
+      <ion-thumbnail slot="start" >
+        <img [src]="contact.contactAvatar" style="border-radius:15px;"/>
         <ion-ripple-effect></ion-ripple-effect>
+        <span class="bullet"> </span>
       </ion-thumbnail>
       <ion-label class="ion-text-wrap">
         <h2 class="text-height">
@@ -24,6 +32,7 @@
           <p class="ion-float-end">{{ contact.time | date: "shortTime" }}</p>
         </h2>
         <p class="text-height">{{ contact.snippet }}</p>
+        <ion-button color="danger" size="small" shape="round" style="position:absolute; right: 15px; top:35px;">2</ion-button>
       </ion-label>
       <ion-ripple-effect></ion-ripple-effect>
     </ion-item>

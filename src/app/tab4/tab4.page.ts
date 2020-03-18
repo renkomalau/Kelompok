@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as moment from 'moment';
 @Component({
   selector: 'app-tab4',
   templateUrl: './tab4.page.html',
@@ -15,33 +15,35 @@ export class Tab4Page implements OnInit {
     snippet: string,
     time: Date}>;
 
+    public date:any;
+
 
   constructor() { 
+    this.date = moment().format('LL');
+
+
     this.contacts= [
         {
-          contactName: "Renko Panusunan Malau",
-          contactAvatar:"https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-finn.png",
+          contactName: "Andre",
+          contactAvatar:'assets/images/doctor/1.jpeg',
           snippet: "Listen, I've had a pretty messed up day...",
           time: new Date(Date.now())
         },
         {
           contactName: "Han",
-          contactAvatar:
-            "https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-han.png",
+          contactAvatar:'assets/images/doctor/2.jpg',
           snippet: "I've got enough on my plate as it is, and I...",
           time: new Date(Date.now())
         },
         {
           contactName: "Rey",
-          contactAvatar:
-            "https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-rey.png",
+          contactAvatar:'assets/images/doctor/3.jpg',
           snippet: "You will remove these restraints and leave...",
           time: new Date(Date.now())
         },
         {
           contactName: "Luke",
-          contactAvatar:
-            "https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-luke.png",
+          contactAvatar:'assets/images/doctor/4.jpg',
           snippet: "I feel the good in you, the conflict...",
           time: new Date(Date.now())
         }

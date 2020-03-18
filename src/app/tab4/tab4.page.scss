@@ -1,8 +1,32 @@
 
 ion-header ion-toolbar{
     --background: translucent;
-    background-image: url(/assets/images/tab1/dokter.jpg);
-    background-position: 50% 50%;
+    // background-color: rgba(0, 0, 0, 0.37);
+    
+    background: repeating-radial-gradient(rgba(53, 1, 121, 0.61)10%, rgb(55, 15, 235) 10%, blue 55%);
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+.bullet {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: rgb(11, 230, 77);
+    border-radius: 50%;
+    top:60px;
+    left: 60px;
+    margin: 3px;
+}
+
+ion-toolbar {
+
+    --min-height: 56px;
+    --opacity: 1;
+    --padding-bottom: 4px;
+    --padding-end: 4px;
+    --padding-start: 4px;
+    height: 150px;
+    
 }
