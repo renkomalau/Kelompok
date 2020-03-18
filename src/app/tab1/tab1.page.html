@@ -4,11 +4,12 @@
   <ion-header>
     <ion-toolbar>
       <ion-title>
-        <p style="color: wheat; font-size: 15px;"><ion-icon name="location-outline"></ion-icon>
+        <p style="color: wheat; font-size: 15px;  margin-top: 30px;">
+          <ion-icon name="location-outline"></ion-icon>
           <ion-label>Batam</ion-label></p>
         <h2 class="text-height" style="color:white;">
-          <strong><span style="color: red; text-align: left;">T</span>elemedicine</strong>
-          <p class="ion-float-start">Like Never Before</p>
+          <p><strong><span style="color: red;">T</span>elemedicine</strong></p>
+          <p style="font-size:18px; margin: 2px;">Like Never Before</p>
         </h2>
       </ion-title>
       <ion-searchbar placeholder="search for a doctor"> 
@@ -28,7 +29,7 @@
     <ion-slide *ngFor="let page of pages">
       <ion-card class="ion-activatable">
         <img src="{{page.thumb}}" style="max-width: 100%;
-          height: 70px; background-color: white; font-size: 20px;" />
+          height:100px; width:100px; background-color: white; font-size: 15px;" />
         <ion-ripple-effect></ion-ripple-effect>
         <ion-label style="color:black">
           {{page.title}}
