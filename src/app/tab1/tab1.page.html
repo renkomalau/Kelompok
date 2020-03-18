@@ -15,7 +15,7 @@
   
 
   <!-- ion slides -->
-  <ion-list style="">
+  <ion-list>
     <ion-list-header>
       <ion-label><b>Popular Condition</b></ion-label>
       <ion-button style="font-size: 10px; text-transform: none;">See All</ion-button>
@@ -38,22 +38,25 @@
 
   <!-- list dorctor -->
 
-  <ion-list>
+  <ion-list class="margin-bottom ion-no-padding">
     <ion-list-header><b>Top Doctors</b></ion-list-header>
     <ion-card *ngFor="let page of doctor">
-      <ion-item lines="none">
+      <ion-item class="ion-activatable" lines="none">
         <ion-thumbnail slot="start">
           <img src="{{page.image}}" style="border-radius:15px;" />
+          <ion-ripple-effect></ion-ripple-effect>
         </ion-thumbnail>
-        <ion-label>
+        <ion-label class="ion-text-wrap">
           <h6><b>{{page.name}}</b></h6>
           <p><br /></p>
           <p>{{page.description}}</p>
         </ion-label>
+        <ion-ripple-effect></ion-ripple-effect>
         <ion-note item-end>{{date}}</ion-note>
         <ion-button fill="outline" size="small" shape="round"
           style="text-transform: none;  right: 0px;  position: absolute;" color="danger">Reservation
         </ion-button>
+        <ion-ripple-effect></ion-ripple-effect>
       </ion-item>
     </ion-card>
   </ion-list>
