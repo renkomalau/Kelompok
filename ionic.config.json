@@ -1,5 +1,7 @@
 {
   "name": "Kelompok",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

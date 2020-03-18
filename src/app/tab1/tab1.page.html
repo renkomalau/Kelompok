@@ -1,112 +1,60 @@
 
-
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" style="position: -webkit-sticky;">
   <!-- header -->
-  <ion-header class="header">
+  <ion-header>
     <ion-toolbar>
-      <ion-title style="position: relative; top : 100px; color: yellow;" size="large"><b>Sehat Itu Murah,<br> Sakit itu Mahal</b></ion-title>
-      <ion-searchbar animated style="--icon-color:blue; --placeholder-color:blue; --clear-button-color:blue; " event="ionBlur"></ion-searchbar>
+      <ion-title color="light">
+        <h2><b>Telemedicine</b></h2>
+        <h3>Like Never Before</h3>
+      </ion-title>
+      <ion-searchbar placeholder="search for a doctor"> 
+      </ion-searchbar>
     </ion-toolbar>
   </ion-header>
 
-  <!-- kondisi -->
   
-    <ion-item lines="none">
-      <ion-label><b>Popular Condition</b></ion-label>
-      <ion-note slot="end">See all</ion-note>
-    </ion-item>   
 
-    
   <!-- ion slides -->
+  <ion-list style="">
+    <ion-list-header>
+      <ion-label><b>Popular Condition</b></ion-label>
+      <ion-button style="font-size: 10px; text-transform: none;">See All</ion-button>
+    </ion-list-header>
   <ion-slides [options]="slidebaru">
     <ion-slide *ngFor="let page of pages">
       <ion-card>
-        <img
-          src="{{page.thumb}}"
-          style="max-width: 100%;
-          height: 70px; background-color: white; font-size: 20px;"/>
-          <ion-label style="color:black; ">
-            {{page.title}}
-          </ion-label>
+        <img src="{{page.thumb}}" style="max-width: 100%;
+          height: 70px; background-color: white; font-size: 20px;" />
+        <ion-label style="color:black; ">
+          {{page.title}}
+        </ion-label>
       </ion-card>
     </ion-slide>
   </ion-slides>
+</ion-list>
   <!-- end slides -->
 
   <!-- top doctor -->
-  
-    <ion-item lines="none">
-      <ion-label><b>Top doctors</b></ion-label>
-    </ion-item>   
- 
 
   <!-- list dorctor -->
 
-  <ion-list *ngFor="let page of doctor">
-    <ion-item style="margin:0px 0px 0px 0px; height:28px; top:0px;"><ion-note slot="end" style="font-size:10px;">{{date}}</ion-note></ion-item>
-    
-    <ion-item>
-      
-      <ion-thumbnail slot="start">
-        <img src="{{page.image}}" style="border-radius:15px;">
-      </ion-thumbnail>
-      
-      <ion-label>
-        <h4><b>{{page.name}}</b></h4>
-        <p>{{page.description}}</p>
-      </ion-label>
-      
-      
-      <ion-button slot="end" fill="outline" size="small" shape="round" style=" text-transform: none; --color-hover:red; color: danger;">Reservation</ion-button>
-    </ion-item>
+  <ion-list>
+    <ion-list-header><b>Top Doctors</b></ion-list-header>
+    <ion-card *ngFor="let page of doctor">
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img src="{{page.image}}" style="border-radius:15px;" />
+        </ion-thumbnail>
+        <ion-label>
+          <h6><b>{{page.name}}</b></h6>
+          <p><br /></p>
+          <p>{{page.description}}</p>
+        </ion-label>
+        <ion-note item-end>{{date}}</ion-note>
+        <ion-button fill="outline" size="small" shape="round"
+          style="text-transform: none;  right: 0px;  position: absolute;" color="danger">Reservation
+        </ion-button>
+      </ion-item>
+    </ion-card>
   </ion-list>
-
-    <!-- test -->
-
-  </ion-content>
-  <!-- ion card -->
-  <!-- <ion-card>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="../../assets/shapes.svg" />
-      </ion-avatar>
-      <ion-label>
-        <h3>John Doe</h3>
-        <p>Dec 10, 2019</p>
-      </ion-label>
-    </ion-item>
-
-    <img src="../../assets/shapes.svg" alt="ion" />
-    <ion-card-header>
-      <ion-card-title>Hotel Panama Garden</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis
-      mollis ligula sed ultrices.
-    </ion-card-content>
-
-    <ion-footer>
-      <ion-row>
-        <ion-col center text-center>
-          <button>
-            <ion-icon name="thumbs-up"></ion-icon>
-            <div>1.5k Likes</div>
-          </button>
-        </ion-col>
-        <ion-col center text-center>
-          <button>
-            <ion-icon name="text"></ion-icon>
-            <div>4 Comments</div>
-          </button>
-        </ion-col>
-        <ion-col center text-center>
-          <button>
-            <ion-icon name="time"></ion-icon>
-            <div>11h ago</div>
-          </button>
-        </ion-col>
-      </ion-row>
-    </ion-footer>
-  </ion-card>
-  end card -->
-
+</ion-content>
