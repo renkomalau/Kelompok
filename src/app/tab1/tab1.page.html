@@ -1,84 +1,70 @@
-<ion-header class="header">
-  <ion-toolbar>
-    <ion-searchbar></ion-searchbar>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
+  <!-- header -->
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <p style="color: wheat; font-size: 15px;  margin-top: 30px;">
+          <ion-icon name="location-outline"></ion-icon>
+          <ion-label>Batam</ion-label></p>
+        <h2 class="text-height" style="color:white;">
+          <p><strong><span style="color: red;">T</span>elemedicine</strong></p>
+          <p style="font-size:18px; margin: 2px;">Like Never Before</p>
+        </h2>
+      </ion-title>
+      <ion-searchbar placeholder="search for a doctor"> 
+      </ion-searchbar>
+    </ion-toolbar>
+  </ion-header>
+
+  
+
   <!-- ion slides -->
-  <ion-item>
-    <ion-label>Popular Conditions</ion-label>
-    <ion-label slot="end">See all</ion-label>
-  </ion-item>
+  <ion-list>
+    <ion-list-header>
+      <ion-label><b>Popular Condition</b></ion-label>
+      <ion-button style="font-size: 10px; text-transform: none;">See All</ion-button>
+    </ion-list-header>
   <ion-slides [options]="slidebaru">
     <ion-slide *ngFor="let page of pages">
-      <ion-card style="background-color: transparent;">
-        <img
-          src="{{page.thumb}}"
-          style="height: 60px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0); "/>
-        <ion-card-subtitle class="title">
+      <ion-card class="ion-activatable">
+        <img src="{{page.thumb}}" style="max-width: 100%;
+          height:100px; width:100px; background-color: white; font-size: 15px;" />
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-label style="color:black">
           {{page.title}}
-        </ion-card-subtitle>
+        </ion-label>
+        <ion-ripple-effect></ion-ripple-effect>
       </ion-card>
     </ion-slide>
   </ion-slides>
+</ion-list>
   <!-- end slides -->
 
+  <!-- top doctor -->
 
-  
-    <ion-item button (click)="testClick()" *ngFor="let page of doctor">
-      <ion-thumbnail slot="start">
-        <img src="{{page.name}}">
-      </ion-thumbnail>
-      <ion-label>
-        <h3>{{page.description}}</h3>
-        <p>Icon on right</p>
-      </ion-label>
-    </ion-item>
-  </ion-content>
-  <!-- ion card -->
-  <!-- <ion-card>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="../../assets/shapes.svg" />
-      </ion-avatar>
-      <ion-label>
-        <h3>John Doe</h3>
-        <p>Dec 10, 2019</p>
-      </ion-label>
-    </ion-item>
+  <!-- list dorctor -->
 
-    <img src="../../assets/shapes.svg" alt="ion" />
-    <ion-card-header>
-      <ion-card-title>Hotel Panama Garden</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis
-      mollis ligula sed ultrices.
-    </ion-card-content>
-
-    <ion-footer>
-      <ion-row>
-        <ion-col center text-center>
-          <button>
-            <ion-icon name="thumbs-up"></ion-icon>
-            <div>1.5k Likes</div>
-          </button>
-        </ion-col>
-        <ion-col center text-center>
-          <button>
-            <ion-icon name="text"></ion-icon>
-            <div>4 Comments</div>
-          </button>
-        </ion-col>
-        <ion-col center text-center>
-          <button>
-            <ion-icon name="time"></ion-icon>
-            <div>11h ago</div>
-          </button>
-        </ion-col>
-      </ion-row>
-    </ion-footer>
-  </ion-card>
-  end card -->
-
+  <ion-list class="margin-bottom ion-no-padding">
+    <ion-list-header><b>Top Doctors</b></ion-list-header>
+    <ion-card *ngFor="let page of doctor" style="box-shadow: none;">
+      <ion-item class="ion-activatable" lines="none">
+        <ion-thumbnail slot="start">
+          <img src="{{page.image}}" style="border-radius:15px;" />
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap text-height">
+          <strong>{{page.name}}</strong>
+          <p><br/></p>
+          <span class="bullet"> </span>
+          <p style="margin-left: 10px;">{{page.description}}</p>
+        </ion-label>
+        <ion-note item-end>{{date}}</ion-note>
+        <ion-button fill="outline" size="small" shape="round"
+          style="text-transform: none;  right: 0px;  position: absolute;" color="danger">Reservation
+        </ion-button>
+        <ion-ripple-effect></ion-ripple-effect>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+</ion-content>
