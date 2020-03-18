@@ -19,7 +19,7 @@ export class Tab4Page implements OnInit {
   constructor() { 
     this.contacts= [
         {
-          contactName: "Finn",
+          contactName: "Renko Panusunan Malau",
           contactAvatar:"https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-finn.png",
           snippet: "Listen, I've had a pretty messed up day...",
           time: new Date(Date.now())

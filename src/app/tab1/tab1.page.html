@@ -22,13 +22,14 @@
     </ion-list-header>
   <ion-slides [options]="slidebaru">
     <ion-slide *ngFor="let page of pages">
-      <ion-card>
+      <ion-card class="ion-activatable">
         <img src="{{page.thumb}}" style="max-width: 100%;
           height: 70px; background-color: white; font-size: 20px;" />
-        
+        <ion-ripple-effect></ion-ripple-effect>
         <ion-label style="color:black; ">
           {{page.title}}
         </ion-label>
+        <ion-ripple-effect></ion-ripple-effect>
       </ion-card>
     </ion-slide>
   </ion-slides>
@@ -41,18 +42,18 @@
 
   <ion-list class="margin-bottom ion-no-padding">
     <ion-list-header><b>Top Doctors</b></ion-list-header>
-    <ion-card *ngFor="let page of doctor">
+    <ion-card *ngFor="let page of doctor" style="box-shadow: none;">
       <ion-item class="ion-activatable" lines="none">
         <ion-thumbnail slot="start">
           <img src="{{page.image}}" style="border-radius:15px;" />
           <ion-ripple-effect></ion-ripple-effect>
         </ion-thumbnail>
-        <ion-label class="ion-text-wrap">
-          <h6><b>{{page.name}}</b></h6>
-          <p><br /></p>
-          <p>{{page.description}}</p>
+        <ion-label class="ion-text-wrap text-height">
+          <strong>{{page.name}}</strong>
+          <p><br/></p>
+          <span class="bullet"> </span>
+          <p style="margin-left: 10px;">{{page.description}}</p>
         </ion-label>
-        <ion-ripple-effect></ion-ripple-effect>
         <ion-note item-end>{{date}}</ion-note>
         <ion-button fill="outline" size="small" shape="round"
           style="text-transform: none;  right: 0px;  position: absolute;" color="danger">Reservation
