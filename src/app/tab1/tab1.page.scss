@@ -18,13 +18,13 @@ background-image: url(/assets/images/tab1/a.jpg);
 background-position: 50% 50%;
 background-repeat: no-repeat;
 background-size: cover;
-height: 170px;
+height: 200px;
 }
 
 
 ion-searchbar{
   --icon-color:blue; 
-  --placeholder-color:blue; 
+  --placeholder-color:light; 
   --clear-button-color:blue;
 }
 
@@ -34,7 +34,6 @@ ion-toolbar {
   --padding-bottom: 4px;
   --padding-end: 4px;
   --padding-start: 4px;
-  --padding-top:30px;
   
 }
 .bullet {

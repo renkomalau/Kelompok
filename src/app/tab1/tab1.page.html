@@ -1,11 +1,15 @@
 
-<ion-content [fullscreen]="true" style="position: -webkit-sticky;">
+<ion-content [fullscreen]="true">
   <!-- header -->
   <ion-header>
     <ion-toolbar>
-      <ion-title color="Light">
-        <h2><b>Telemedicine</b></h2>
-        <h3>Like Never Before</h3>
+      <ion-title>
+        <p style="color: wheat; font-size: 15px;"><ion-icon name="location-outline"></ion-icon>
+          <ion-label>Batam</ion-label></p>
+        <h2 class="text-height" style="color:white;">
+          <strong><span style="color: red; text-align: left;">T</span>elemedicine</strong>
+          <p class="ion-float-start">Like Never Before</p>
+        </h2>
       </ion-title>
       <ion-searchbar placeholder="search for a doctor"> 
       </ion-searchbar>
@@ -26,7 +30,7 @@
         <img src="{{page.thumb}}" style="max-width: 100%;
           height: 70px; background-color: white; font-size: 20px;" />
         <ion-ripple-effect></ion-ripple-effect>
-        <ion-label style="color:black; ">
+        <ion-label style="color:black">
           {{page.title}}
         </ion-label>
         <ion-ripple-effect></ion-ripple-effect>
