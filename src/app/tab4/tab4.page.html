@@ -8,7 +8,32 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-list>
+
+
+
+  <ion-list class="margin-bottom ion-no-padding">
+    <ion-card *ngFor="let contact of contacts" style="border-radius: 0px 20px 20px 20px;">
+    <ion-item class="ion-activatable" style="background-color:blue;">
+      <ion-thumbnail slot="start">
+        <img [src]="contact.contactAvatar" />
+        <ion-ripple-effect></ion-ripple-effect>
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <h2 class="text-height">
+          <strong>{{ contact?.contactName }}</strong>
+          <p class="ion-float-end">{{ contact.time | date: "shortTime" }}</p>
+        </h2>
+        <p class="text-height">{{ contact.snippet }}</p>
+      </ion-label>
+      <ion-ripple-effect></ion-ripple-effect>
+    </ion-item>
+  </ion-card>
+  </ion-list>
+  
+  
+  
+  
+  <!-- <ion-list>
     <ion-list-header>
       Recent Conversations
     </ion-list-header>
@@ -106,7 +131,7 @@
         <p>Do or do not. There is no try...</p>
       </ion-label>
     </ion-item>
-  </ion-list>
+  </ion-list> -->
 
   
 </ion-content>
