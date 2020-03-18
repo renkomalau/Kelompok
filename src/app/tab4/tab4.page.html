@@ -14,10 +14,10 @@
   <ion-list class="margin-bottom ion-no-padding">
     <ion-card *ngFor="let contact of contacts" style="border-radius: 0px 20px 20px 20px;">
     <ion-item class="ion-activatable" style="background-color:blue;">
-      <ion-avatar slot="start">
+      <ion-thumbnail slot="start">
         <img [src]="contact.contactAvatar" />
         <ion-ripple-effect></ion-ripple-effect>
-      </ion-avatar>
+      </ion-thumbnail>
       <ion-label class="ion-text-wrap">
         <h2 class="text-height">
           <strong>{{ contact?.contactName }}</strong>
