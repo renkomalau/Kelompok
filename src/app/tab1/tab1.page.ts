@@ -141,5 +141,4 @@ export class Tab1Page {
   }
   slidebaru = {
     slidesPerView: 2.7 }
-
 }
