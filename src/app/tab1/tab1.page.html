@@ -1,6 +1,8 @@
 
 <ion-content [fullscreen]="true">
   <!-- header -->
+
+  <div class="header">
   <ion-header>
     <ion-toolbar>
       <ion-title>
@@ -12,14 +14,20 @@
           <p style="font-size:18px; margin: 2px;">Like Never Before</p>
         </h2>
       </ion-title>
-      <ion-searchbar placeholder="search for a doctor"> 
-      </ion-searchbar>
+      
     </ion-toolbar>
   </ion-header>
+</div>
+
+<div class="search" >
+  <ion-searchbar placeholder="search for a doctor"> 
+  </ion-searchbar>
+</div>
 
   
 
   <!-- ion slides -->
+  <div class="content">
   <ion-list>
     <ion-list-header>
       <ion-label><b>Popular Condition</b></ion-label>
@@ -67,4 +75,5 @@
       </ion-item>
     </ion-card>
   </ion-list>
+</div>
 </ion-content>

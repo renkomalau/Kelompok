@@ -46,6 +46,24 @@ export class Tab4Page implements OnInit {
           contactAvatar:'assets/images/doctor/4.jpg',
           snippet: "I feel the good in you, the conflict...",
           time: new Date(Date.now())
+        },
+        {
+          contactName: "Luke",
+          contactAvatar:'assets/images/doctor/4.jpg',
+          snippet: "I feel the good in you, the conflict...",
+          time: new Date(Date.now())
+        },
+        {
+          contactName: "Luke",
+          contactAvatar:'assets/images/doctor/4.jpg',
+          snippet: "I feel the good in you, the conflict...",
+          time: new Date(Date.now())
+        },
+        {
+          contactName: "Luke",
+          contactAvatar:'assets/images/doctor/4.jpg',
+          snippet: "I feel the good in you, the conflict...",
+          time: new Date(Date.now())
         }
       ];
     }

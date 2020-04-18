@@ -75,12 +75,6 @@ export class Tab1Page {
         thumb: 'assets/images/rabies.png',
         description: 'The latest news updates from our Twitter account',
         link: "TweetsPage"
-      },
-      {
-        title: 'Rabies',
-        thumb: 'assets/images/d.jpeg',
-        description: 'The latest news updates from our Twitter account',
-        link: "TweetsPage"
       }
 
     ];
