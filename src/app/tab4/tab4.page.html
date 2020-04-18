@@ -1,4 +1,5 @@
 <ion-content [fullscreen]="true">
+  <div  class="header-fixed">
   <ion-header>
     <ion-toolbar>
       <ion-title>
@@ -14,11 +15,14 @@
       <ion-searchbar animated style="--icon-color:blue; --placeholder-color:blue; --clear-button-color:blue; " placeholder="Search for message"></ion-searchbar>
     </ion-toolbar>
   </ion-header>
+</div>
 
-
-
+<div class="content-on-top">
 
   <ion-list class="margin-bottom ion-no-padding">
+    <ion-list-header>
+      <ion-label style="text-align: center; color: blue;">Doctor Message</ion-label>
+    </ion-list-header>
     <ion-card *ngFor="let contact of contacts" style="border-radius: 0px 20px 20px 20px; ">
     <ion-item class="ion-activatable" color="light" lines="none">
       <ion-thumbnail slot="start" >
@@ -38,6 +42,7 @@
     </ion-item>
   </ion-card>
   </ion-list>
+</div>
   
   
   
